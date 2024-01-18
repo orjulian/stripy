@@ -68,7 +68,7 @@ defmodule Stripy do
         |> Map.merge(headers)
         |> Map.to_list()
 
-      api_url = get_config(:endpoint, "https://api.stripe.com/v1/")
+      api_url = get_config(:endpoint, "https://api.stripe.com/")
 
       options = Application.get_env(:stripy, :httpoison, [])
 
